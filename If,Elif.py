@@ -13,3 +13,4 @@ elif a == b:
         print("\nСвершилось!")
     elif b > a:
         print("\nДа ну!")
+
