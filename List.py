@@ -1,10 +1,10 @@
-num1 = int(input("Введите длину списка:"))
-num2 = int(input("Ведите максимальное значение элемента списка: "))
+def create_list():
+    x = int(input("Введите длину списка: "))
+    y = int(input("Введите максимально возможное значение элемента списка: "))
 
-def func_list(num1, num2):
-    new_list = []
-    for list1 in range(0, num1):
-        new_list.append(randrange(0, num2))
-print(new_list)
+    list1 = [random.randint(1, y) for i in range(x)]
 
-func_list(num1, num2)
+    return list1
+
+# вызов функции
+print(create_list())
